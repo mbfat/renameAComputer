@@ -1,6 +1,8 @@
 https://www.shellhacks.com/change-computer-name-windows-cmd-powershell/
 WARNING: The changes will take effect after you restart the computer <OldHostname>.
 
+IN TERMINAL, GET COMPUTER NAME
+hostname
 
 IN POWERSHELL (ADMIN)
 PS C:> Rename-Computer -NewName "<NewHostname>"
