@@ -6,11 +6,13 @@ hostname
 
 IN POWERSHELL (ADMIN)
 PS C:> Rename-Computer -NewName "<NewHostname>"
+Rename-Computer -NewName "RECYLE-20230525"
 - sample output -
 
 
-IN TERMINAL (ADMIN)
+IN TERMINAL (ADMIN) DONT CHANGE %computername%
 C:> wmic computersystem where name="%computername%" call rename name="<NewHostname>"
+wmic computersystem where name="%computername%" call rename name="RECYCLE-20230525"
 - sample output -
 Executing (\\<OldHostname>\ROOT\CIMV2:Win32_ComputerSystem.Name="<OldHostname>")->rename()
 Method execution successful.
